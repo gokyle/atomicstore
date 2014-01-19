@@ -1,0 +1,3 @@
+atomicstore is a package for writing a file atomically. It presents the
+same interface as ioutil.WriteFile, while ensuring that the file is
+written to a temporary file and renamed to the destination.

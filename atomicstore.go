@@ -10,7 +10,7 @@ var Prefix = "astore"
 
 // AtomicWrite writes the data to a temporary file, moving it to the
 // filename on success.
-func AtomicWrite(filename string, data []byte, perms os.FileMode) error {
+func WriteFile(filename string, data []byte, perms os.FileMode) error {
 	tmpFile, err := ioutil.TempFile("", Prefix)
 	if err != nil {
 		return err

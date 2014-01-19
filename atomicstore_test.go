@@ -6,7 +6,7 @@ import "os"
 import "testing"
 
 func writeFile(t *testing.T, msg []byte) {
-	err := AtomicWrite("tmp.out", msg, 0600)
+	err := WriteFile("tmp.out", msg, 0600)
 	if err != nil {
 		t.Fatalf("atomicstore: failed to write file (%v)", err)
 	}
